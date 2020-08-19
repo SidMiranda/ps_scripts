@@ -1,0 +1,7 @@
+Set objMessage = CreateObject("CDO.Message") 
+ objMessage.Subject = "Teste envio Email" 
+ objMessage.From = """Nome"" <user@domain.com.br>" 
+ objMessage.To = "user@domain.com.br" 
+ objMessage.TextBody = "Status = OK"
+ 
+ objMessage.Send
